@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "title": "Le savon du Roi",
+        "description": "Découvrez le Savon du Roi, ce savon incarne l'élégance et le rafinement. Sa fragance, boisée, fraîche et charismatique. Enrichi d'ingrédients précieux, il laisse la peau douce et luxueusement parfumée.",
+        "price": 50.00,
+        "image": "/assets/RoiSoleil.webp"
+    },
+    {
+        "id": 2,
+        "title": "Le Roi Soleil",
+        "description": " Une évocation majestueuse des escapades royales en forêt. Ce savon, délicatement gravé de motifs végétaux, incarne la noblesse et l'authenticité. Sa fragrance fraîche et vivifiante, mélange harmonieux de sapin et d'herbes coupées, transporte vos sens au cœur des bois.",
+        "price": 45.00,
+        "image": "/assets/savon-chasse.webp"
+    }
+    {
+        "id": 3,
+        "title": "Le roi est à la chasse",
+        "description": " Ce savon, portant l'effigie rayonnante du roi, est l'incarnation même du prestige et de la puissance. Sa fragrance intense et poivrée, laisse une empreinte olfactive inoubliable.  ",
+        "price": 45.00,
+        "image": "/assets/RoiSoleil.webp"
+    }
+    {
+        "id": 4,
+        "title": "Le Capitaine",
+        "description": " Une invitation au voyage sur les mers tumultueuses. Ce savon, arborant un insigne noble, symbolise l'esprit d'aventure et de découverte. Sa fragrance marine et sa fraîcheur iodée, créées par des maîtres parfumeurs, évoquent l'air vivifiant des océans. ",
+        "price": 45.00,
+        "image": "/assets/savon-capitaine.webp"
+    }
+    {
+        "id": 5,
+        "title": "Le Savon de la Reine",
+        "description": "  Une création exquise à l'image de la royauté. Ce savon, sculpté en forme de rose délicate, incarne la grâce et la beauté intemporelle. Le Savon de la Reine, infusé de véritables extraits de rose, offre une expérience sensorielle luxueuse et raffinée.  ",
+        "price": 50.00,
+        "image": "/assets/savon-reine.webp"
+    }
+    {
+        "id": 6,
+        "title": "Jeux et légèreté",
+        "description": " Une symphonie de douceur et de raffinement, inspirée par le faste et la délicatesse des jeux de cour. Sa fragrance subtile de lavande et de musc blanc, enveloppe la peau d'un parfum apaisant et sophistiqué. ",
+        "price": 45.00,
+        "image": "/assets/savon-jeu.webp"
+    }
+    {
+        "id": 7,
+        "title": "Gourmandises",
+        "description": "  Une délicieuse évocation des goûters dans la verrière de la reine. Ce savon, en forme de macaron, rappelle la douceur des moments privilégiés lors des concerts privés de la cour. Sa fragrance à l'amande, rappelant la galette traditionnelle, embaume votre peau d'un parfum gourmand et réconfortant.  ",
+        "price": 45.00,
+        "image": "/assets/savon-macaron.webp"
+    }
+    {
+        "id": 8,
+        "title": "Lait d'ânesse",
+        "description": " Une merveille de pureté et d'onctuosité. Ce savon, d'un blanc immaculé, est un hommage aux secrets de beauté ancestraux.  Le Savon Lait d'Ânesse sublime chaque bain en une expérience de soin délicate, idéale pour les peaux les plus exigeantes.  ",
+        "price": 50.00,
+        "image": "/assets/savon-anesse.webp"
+    }
+    {
+        "id": 9,
+        "title": "Haute-couture",
+        "description": " Une véritable déclaration de style et d'élégance. Sa fragrance envoûtante de jasmin, enveloppe votre peau d'un parfum floral et sophistiqué.",
+        "price": 45.00,
+        "image": "/assets/savon-dressing.webp"
+    }
+    {
+        "id": 10,
+        "title": "La Bergère",
+        "description": "Une escapade bucolique au cœur des champs du Hameau de la Reine.Sa fragrance apaisante et florale enveloppe la peau d'un parfum relaxant, transformant chaque bain en un moment de sérénité et de bien-être.",
+        "price": 45.00,
+        "image": "/assets/savon-lavande.webp"
+    }
+    {
+        "id": 10,
+        "title": "Patchouli",
+        "description": " Un hommage aux passionnés des jeux de cartes et des soirées interminables à la cour. Sa fragrance envoûtante de patchouli enveloppe la peau d'un parfum riche et terreux, parfait pour ceux qui cherchent une touche de mystère et de sophistication.",
+        "price": 40.00,
+        "image": "/assets/savon-patchouli.webp"
+    }
+    {
+        "id": 11,
+        "title": "Mozart",
+        "description": " Un hommage à l'extraordinaire génie du compositeur autrichien. Ce savon, à la fragrance raffinée et complexe, marie des notes de bergamote fraîche, de cèdre noble et de vanille douce.",
+        "price": 45.00,
+        "image": "/assets/savon-mozart.webp"
+    }
+    {
+        "id": 12,
+        "title": "Franc-maçonnerie",
+        "description": "Une invitation à plonger dans l'univers secret et fascinant des sociétés initiatiques. Sa fragrance raffinée, mélange subtil de bois de santal, d'encens et de notes épicées, enveloppe la peau d'un parfum à la fois mystique et sophistiqué. ",
+        "price": 45.00,
+        "image": "/assets/savon-message.webp"
+    }
+    {
+        "id": 13,
+        "title": "Marseille",
+        "description": " Édition Populaire, inspiré par la riche histoire de Marseille sous le règne de Louis XIV. Ce savon authentique, fabriqué selon les traditions marseillaises, célèbre l'artisanat et la vie quotidienne de cette ville portuaire.",
+        "price": 35.00,
+        "image": "/assets/savon-marseille.webp"
+    }
+]
