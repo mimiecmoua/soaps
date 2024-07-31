@@ -1,81 +1,68 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import productsData from '../data/products.json'; // Chemin vers votre fichier JSON
 
 const Products = () => {
-
     const [data, setData] = useState([]);
-    const [filter, setFilter] = useState(data);
+    const [filter, setFilter] = useState([]);
     const [loading, setLoading] = useState(false);
-    let componentMounted = true;
 
-    useEffect (() => {
+    useEffect(() => {
         const getProducts = async () => {
             setLoading(true);
-            const response = await fetch("https://fakestoreapi.com/products");
-            if(componentMounted){
-                setData(await response.clone().json());
-                setFilter(await response.json());
-                setLoading(false);
-                console.log(filter)
-            }
+            // Simulez un fetch en utilisant les données locales
+            setData(productsData);
+            setFilter(productsData);
+            setLoading(false);
+        };
 
-            return () => {
-                componentMounted = false;
-            }
-        }
-        getProducts()
+        getProducts();
     }, []);
 
     const Loading = () => {
-        return(
+        return (
             <>
                 Loading....
             </>
-        )
-    }
-    const ShowProducts = () => {
-        return (
-        <>
-        <div className="buttons d-flex justify-content-center mb-5 pb-5">
-            <button className="bnt btn-outline-dark rounded me-2">Voir Tout</button>
-            <button className="bnt btn-outline-dark rounded me-2">Le Roi</button>
-            <button className="bnt btn-outline-dark rounded me-2">La Reine</button>
-            <button className="bnt btn-outline-dark rounded me-2">La Favorite</button>
-            <button className="bnt btn-outline-dark rounded me-2">Trésors du Capitaine</button>
-        </div>
-        {filter.map((product)=>{
-            return(
-                <>
-                <div className="col-md-3">
-                    <div className="card">
-                        <img src="../assets/savonRoi.webp" className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">Savon du Roi</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" className="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                </>
-            )
-        })}
-        </>
         );
     };
-    return (
-        <div>
-            <div className="container my-5 py-5">
-                <div className="row">
-                    <div className="col-12 mb-5">
-                        <h1 className="display-6 fw-bolder text-center">Collection de Savons</h1>
-                        <hr />
-                    </div>
+
+    const ShowProducts = () => {
+        return (
+            <>
+                <div className="buttons d-flex justify-content-center mb-5 pb-5 py-5">
+                    <button className="btn btn-outline-dark rounded me-2">Voir Tout</button>
+                    <button className="btn btn-outline-dark rounded me-2">Le Roi</button>
+                    <button className="btn btn-outline-dark rounded me-2">La Reine</button>
+                    <button className="btn btn-outline-dark rounded me-2">La Favorite</button>
+                    <button className="btn btn-outline-dark rounded me-2">Trésors du Capitaine</button>
                 </div>
-                <div className="row justify-content-center">
-                    {loading ? <loading/> : <ShowProducts/>}
+                <div className="row">
+                    {filter.map((product) => (
+                        <div className="col-md-3" key={product.id}>
+                            <div className="card">
+                                <img className="card-img-top" src={product.image} alt={product.title} />
+                                <div className="card-body">
+                                    <h5 className="card-title">{product.title}</h5>
+                                    <p className="card-text">{product.description}</p>
+                                    <a href="#" className="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </>
+        );
+    };
+
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col-md-12">
+                    {loading ? <Loading /> : <ShowProducts />}
                 </div>
             </div>
         </div>
     );
-}
+};
 
 export default Products;

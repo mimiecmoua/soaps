@@ -2,3 +2,24 @@
 .navbar-nav a{
   font-size: 18px;
 }
+
+.hero {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* couleur noire avec une opacité de 50% */
+  z-index: 1;
+}
+
+.text-overlay {
+  position: relative;
+  z-index: 2;
+  color: white; /* assure que le texte est blanc pour un bon contraste */
+}
+
