@@ -70,70 +70,70 @@
         "image": "/assets/savon-lavande.webp"
     },
     {
-        "id": 10,
+        "id": 11,
         "title": "Patchouli",
         "description": " Un hommage aux passionnés des jeux de cartes et des soirées interminables à la cour. Sa fragrance envoûtante de patchouli enveloppe la peau d'un parfum riche et terreux, parfait pour ceux qui cherchent une touche de mystère et de sophistication.",
         "price": "45.00€",
         "image": "/assets/savon-patchouli.webp"
     },
     {
-        "id": 11,
+        "id": 12,
         "title": "Mozart",
         "description": " Un hommage à l'extraordinaire génie du compositeur autrichien. Ce savon, à la fragrance raffinée et complexe, marie des notes de bergamote fraîche, de cèdre noble et de vanille douce.",
         "price": "45.00€",
         "image": "/assets/savon-mozart.webp"
     },
     {
-        "id": 12,
+        "id": 13,
         "title": "Franc-maçonnerie",
         "description": "Une invitation à plonger dans l'univers secret et fascinant des sociétés initiatiques. Sa fragrance raffinée, mélange subtil de bois de santal, d'encens et de notes épicées, enveloppe la peau d'un parfum à la fois mystique et sophistiqué. ",
         "price": "45.00€",
         "image": "/assets/savon-message.webp"
     },
     {
-        "id": 13,
+        "id": 14,
         "title": "Marseille",
         "description": " Édition Populaire, inspiré par la riche histoire de Marseille sous le règne de Louis XIV. Ce savon authentique, fabriqué selon les traditions marseillaises, célèbre l'artisanat et la vie quotidienne de cette ville portuaire.",
         "price": "35.00€",
         "image": "/assets/savon-marseille.webp"
     },
     {
-        "id": 14,
+        "id": 15,
         "title": "Diamant",
         "description": " Un concept unique où l'art du bain rencontre l'élégance des pierres précieuses. Enrichi d'un véritable diamant en son cœur, ce savon transforme chaque utilisation en une expérience exceptionnelle.",
         "price": "15000.00€",
         "image": "/assets/savon-diamant.webp"
     },
     {
-        "id": 15,
+        "id": 16,
         "title": "Émeraude",
         "description": " Où la nature rencontre le raffinement. Ce savon unique, intégrant une précieuse émeraude, offre une expérience de bain exceptionnelle.",
         "price": "15000.00€",
         "image": "/assets/savon-emeraude.webp"
     },
     {
-        "id": 16,
+        "id": 17,
         "title": "Saphir",
         "description": " une fusion d'élégance et de mystère inspirée par l'Orient. Ce savon, intégrant un précieux saphir, évoque les contes des Mille et Une Nuits et la beauté des palais orientaux.",
         "price": "25000.00€",
         "image": "/assets/savon-saphir.webp"
     },
     {
-        "id": 17,
+        "id": 18,
         "title": "Or",
         "description": " Le Savon Or des Montagnes transforme votre rituel de bain en une escapade dorée au cœur de la nature.",
         "price": "3000.00€",
         "image": "/assets/savon-or.webp"
     },
     {
-        "id": 18,
+        "id": 19,
         "title": "Rubis",
         "description": " une fusion audacieuse de puissance et de beauté, inspirée par les forces naturelles des volcans. Ce savon, incrusté d'un éclatant rubis, incarne l'énergie brute et la passion.",
         "price": "4000.00€",
         "image": "/assets/savon-rubis.webp"
     },
     {
-        "id": 19,
+        "id": 20,
         "title": "Perle",
         "description": "Ce savon, inspiré par la beauté mystérieuse des fonds océaniques, transforme chaque bain en un voyage enchanteur sous les mers.",
         "price": "2000.00€",
