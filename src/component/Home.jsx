@@ -10,8 +10,8 @@ const Home = () => {
                     <div className='overlay'></div>
                     <div className='container text-overlay'>
                         <h5 className="card-title display-3 fw-bolder mb-0">Nouvelle Sensations</h5>
-                        <p className="card-text lead fs-2">
-                            Collection Savons vous propose des savons inspirés par l'histoire de France et l'extravagance de cette époque sous le reigne de Louis XIV. 
+                        <p className="card-text lead fs-2 fs-md-3 fs-sm-4">
+                            Collection Savons vous propose des savons inspirés par l'histoire de France. 
                         </p>
                     </div>
                 </div>

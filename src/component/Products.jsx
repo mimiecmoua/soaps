@@ -40,11 +40,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div>
-                <div className="card text-bg-dark">
-                    <img src="/assets/Savon.png" className="card-img" alt="logo savon"/>
-                    <div className="card-img-overlay">
-                    </div>
-                </div>
+               
                 </div>
                 <div className="buttons d-flex justify-content-center mb-5 pb-5 py-5">
                     <button className="btn btn-outline-dark rounded me-2">Voir Tout</button>
@@ -55,13 +51,13 @@ const Products = () => {
                 </div>
                 <div className="row ">
                     {filter.map((product) => (
-                        <div className="col-md-3" key={product.id}>
-                            <div className="card">
+                        <div className="col-md-3 mb-4" key={product.id}>
+                            <div className="card h-100 text-center p-4">
                                 <img className="card-img-top" src={product.image} alt={product.title} />
                                 <div className="card-body">
-                                    <h5 className="card-title">{product.title}</h5>
-                                    <p className="card-text">{product.description}</p>
-                                    <a href="#" className="btn btn-dark">Acheter</a>
+                                    <h5 className="card-title mb-0">{product.title}...</h5>
+                                    <p className="card-text">{product.price}</p>
+                                    <a href="#" className="btn btn-outline-dark">Acheter</a>
                                 </div>
                             </div>
                         </div>
