@@ -30,25 +30,37 @@ const Products = () => {
         return (
             <>
                 <div>
-                    <div className="container my-5 py-5">
+                    <div className="container my-4 py-2">
                         <div className="row">
-                            <div className="col-12 mb-5">
-                                <h1 className="display-6 fw-bolder text-center"> Nouvelle Collection</h1>
+                            <div className="col-12 mb-0 text-center">
+                                <h1 className="display-6 fw-bolder"> Nouvelle Collection</h1>
+                                <hr/>
+                                <img className="img-fluid" src="assets/logo1.png" alt="logo" />
                                 <hr/>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-               
+                <div className="container">
+                    <div className="row justify-content-center mb-5 pb-0 py-0">
+                        <div className="col-12 col-md-2 mb-2">
+                            <button className="btn btn-outline-dark w-100">Voir Tout</button>
+                        </div>
+                        <div className="col-12 col-md-2 mb-2">
+                            <button className="btn btn-outline-dark w-100">Le Roi</button>
+                        </div>
+                        <div className="col-12 col-md-2 mb-2">
+                            <button className="btn btn-outline-dark w-100">La Reine</button>
+                        </div>
+                        <div className="col-12 col-md-2 mb-2">
+                            <button className="btn btn-outline-dark w-100">La Cour</button>
+                        </div>
+                        <div className="col-12 col-md-2 mb-2">
+                            <button className="btn btn-outline-dark w-100">Trésors</button>
+                        </div>
+                    </div>
                 </div>
-                <div className="buttons d-flex justify-content-center mb-5 pb-5 py-5">
-                    <button className="btn btn-outline-dark rounded me-2">Voir Tout</button>
-                    <button className="btn btn-outline-dark rounded me-2">Le Roi</button>
-                    <button className="btn btn-outline-dark rounded me-2">La Reine</button>
-                    <button className="btn btn-outline-dark rounded me-2">La Favorite</button>
-                    <button className="btn btn-outline-dark rounded me-2">Trésors du Capitaine</button>
-                </div>
+
                 <div className="row ">
                     {filter.map((product) => (
                         <div className="col-md-3 mb-4" key={product.id}>
