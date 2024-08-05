@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import productsData from '../data/products.json'; // Chemin vers votre fichier JSON
@@ -60,7 +61,7 @@ const Products = () => {
                             <div className="card-body">
                                 <h5 className="card-title mb-0">{product.title}</h5>
                                 <p className="card-text">{product.price}</p>
-                                <a href="#" className="btn btn-outline-dark">Acheter</a>
+                                <NavLink to={`/products/${product.id}`} className="btn btn-outline-dark">Voir</NavLink>
                             </div>
                         </div>
                     </div>

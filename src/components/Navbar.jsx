@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary bg-white py-3 shadow-sm">
             <div className="container">
                 <NavLink className="navbar-brand fw-bold fs-4" to="/">Collection <i>Savons</i></NavLink>
-                <img src="assets/logo1.png" alt="" height="50px" width="50px" />
+                <img src="../assets/logo1.png" alt="" height="50px" width="50px" />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -28,7 +28,7 @@ const Navbar = () => {
                     <div className="buttons">
                         <NavLink to="/login" className="btn btn-outline-dark"><i className="fa fa-sign-in me-1"></i> Se Connecter</NavLink>
                         <NavLink to="/register" className="btn btn-outline-dark ms-2"><i className="fa fa-user-plus me-1"></i> Register</NavLink>
-                        <NavLink to="/cart" className="btn btn-outline-dark ms-2"><i className="fa fa-shopping-cart me-1"></i> Cart (0)</NavLink>
+                        <NavLink to="/cart" className="btn btn-outline-dark ms-2"><i className="fa fa-shopping-cart me-1"></i> Panier (0)</NavLink>
                     </div>
                 </div>
             </div>
