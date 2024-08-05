@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { addCart } from '../redux/action';
 import { useParams, NavLink } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 import productsData from '../data/products.json'; // Assurez-vous que le chemin est correct
@@ -7,6 +9,11 @@ const Product = () => {
     const { id } = useParams();
     const [product, setProduct] = useState({});
     const [loading, setLoading] = useState(true);
+
+    const dispatch = useDispatch();
+    const addProduct = (product) => {
+        dispatch(addCart(product));
+    }
 
     useEffect(() => {
         const getProduct = async () => {
@@ -41,10 +48,10 @@ const Product = () => {
     const ShowProduct = () => {
         return (
             <>
-                <div className="col-md-6">
+                <div className="col-md-6 ">
                     <img src={product.image} alt={product.title} height="550px" width="300px" />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 py-5">
                     <h4 className="text-uppercase text-black-50">
                         {product.category}
                     </h4>
@@ -57,7 +64,7 @@ const Product = () => {
                         {product.price}
                     </h3>
                     <p className="lead"> {product.description} </p>
-                    <button className="btn btn-outline-dark px-4 py-2">
+                    <button className="btn btn-outline-dark px-4 py-2" onClick={()=>addProduct(product)}>
                         Ajouter au panier
                     </button>
                     <NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">
