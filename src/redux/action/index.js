@@ -3,15 +3,15 @@ export const addCart = (product) => {
     return{
         type : "ADDITEM",
         payload : product
-    }
-}
+    };
+};
 
 
 
 // For Delete Item from Cart
-export const delCart = (product) => {
+export const delItem = (product) => {
     return{
         type : "DELITEM",
         payload : product
-    }
-}
+    };
+};
