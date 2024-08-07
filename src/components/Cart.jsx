@@ -31,7 +31,7 @@ const Cart = () => {
                     <button onClick={() => handleClose(cartItem)} className="btn-close float-end" aria-label="Close"></button>
                     <div className="row justify-content-center">
                         <div className="col-md-4">
-                            <img src={cartItem.image} alt={cartItem.title} height="250px" width="170px" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/${cartItem.image}`} alt={cartItem.title} height="250px" width="170px" />
                         </div>
                         <div className="col-md-4">
                             <h3>{cartItem.title}</h3>

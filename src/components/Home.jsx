@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className='hero'>
             <div className="card text-black border-0">
-                <img src="./assets/bg1.webp" className="card-img" alt="Background"/>
+                <img src={`${process.env.PUBLIC_URL}/assets/bg1.webp`} className="card-img" alt="Background"/>
                 <div className="card-img-overlay d-flex flex-column justify-content-center">
                     <div className='overlay'></div>
                     <div className='container text-overlay'>
