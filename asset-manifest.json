@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://mimiecmoua.github.io/soaps/static/css/main.7c115c48.css",
-    "main.js": "https://mimiecmoua.github.io/soaps/static/js/main.13474c15.js",
+    "main.js": "https://mimiecmoua.github.io/soaps/static/js/main.5f1f93c2.js",
     "static/js/488.25bf0292.chunk.js": "https://mimiecmoua.github.io/soaps/static/js/488.25bf0292.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "https://mimiecmoua.github.io/soaps/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "https://mimiecmoua.github.io/soaps/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -10,11 +10,11 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "https://mimiecmoua.github.io/soaps/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "https://mimiecmoua.github.io/soaps/index.html",
     "main.7c115c48.css.map": "https://mimiecmoua.github.io/soaps/static/css/main.7c115c48.css.map",
-    "main.13474c15.js.map": "https://mimiecmoua.github.io/soaps/static/js/main.13474c15.js.map",
+    "main.5f1f93c2.js.map": "https://mimiecmoua.github.io/soaps/static/js/main.5f1f93c2.js.map",
     "488.25bf0292.chunk.js.map": "https://mimiecmoua.github.io/soaps/static/js/488.25bf0292.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c115c48.css",
-    "static/js/main.13474c15.js"
+    "static/js/main.5f1f93c2.js"
   ]
 }
