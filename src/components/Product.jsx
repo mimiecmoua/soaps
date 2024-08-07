@@ -49,7 +49,7 @@ const Product = () => {
         return (
             <>
                 <div className="col-md-6 ">
-                    <img src={`${process.env.PUBLIC_URL}/assets/${product.image}`} alt={product.title} height="550px" width="300px" />
+                    <img src={`${process.env.PUBLIC_URL}${product.image}`} alt={product.title} height="550px" width="300px" />
                 </div>
                 <div className="col-md-6 py-5">
                     <h4 className="text-uppercase text-black-50">
