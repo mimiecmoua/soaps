@@ -2,7 +2,7 @@
   "name": "soaps",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mimiecmoua.github.io/soap",
+  "homepage": "https://mimiecmoua.github.io/soaps",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@popperjs/core": "^2.11.8",
