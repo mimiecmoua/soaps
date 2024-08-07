@@ -75,7 +75,7 @@ const Products = () => {
             <div className="row my-4 py-2">
                 <div className="col-12 text-center mb-4">
                     <h1 className="display-6 fw-bolder">Nouvelle Collection</h1>
-                    <img className="img-fluid mb-3" src="assets/logo1.png" alt="logo" />
+                    <img className="img-fluid mb-3" src={`${process.env.PUBLIC_URL}/assets/logo1.png`} alt="logo" />
                     <hr/>
                 </div>
             </div>
