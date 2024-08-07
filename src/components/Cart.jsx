@@ -1,12 +1,13 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { delCart, increaseQty, decreaseQty } from '../redux/action';
 import { getCartItems } from '../redux/selectors';
 
 const Cart = () => {
     const state = useSelector(getCartItems);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const handleClose = (item) => {
         dispatch(delCart(item));
@@ -20,8 +21,9 @@ const Cart = () => {
         dispatch(decreaseQty(item));
     }
 
+    const total = state.reduce((acc, item) => acc + item.qty * parseFloat(item.price.replace('€', '')), 0).toFixed(2);
+
     const cartItems = (cartItem) => {
-        // Assurez-vous que le prix est bien un nombre
         const price = parseFloat(cartItem.price.replace('€', ''));
         return (
             <div className="px-4 my-5 bg-light rounded-3" key={cartItem.id}>
@@ -61,25 +63,31 @@ const Cart = () => {
         );
     }
 
-    const button = () => {
-        return (
-            <div className="container">
-                <div className="row">
-                    <NavLink to="/checkout" className="btn btn-outline-dark mb-5 w-25 mx-auto">Procéder au paiement</NavLink>
-                </div>
-            </div>
-        );
+    const handleProceedToCheckout = () => {
+        navigate('/checkout', { state: { total } });
     }
 
     return (
         <>
             {state.length === 0 && emptyCart()}
             {state.length !== 0 && state.map(cartItems)}
-            {state.length !== 0 && button()}
+            {state.length !== 0 && (
+                <div className="container">
+                    <div className="row">
+                        <div className="col text-end">
+                            <h4>Total de la commande : {total}€</h4>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <button onClick={handleProceedToCheckout} className="btn btn-outline-dark mb-5 w-25 mx-auto">Procéder au paiement</button>
+                    </div>
+                </div>
+            )}
         </>
     );
 }
 
 export default Cart;
+
 
 

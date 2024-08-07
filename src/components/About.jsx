@@ -12,24 +12,24 @@ const About = () => {
             </div>
             <div className="row">
                 <div className="col-md-4">
-                    <img src="path_to_image1.jpg" className="img-fluid rounded mb-4" alt="Boutique extérieure" />
+                    <img src="./assets/boutique-ext.webp" className="img-fluid rounded mb-4" alt="Boutique extérieure" />
                 </div>
                 <div className="col-md-4">
-                    <img src="path_to_image2.jpg" className="img-fluid rounded mb-4" alt="Intérieur de la boutique" />
+                    <img src="./assets/boutique-int.webp" className="img-fluid rounded mb-4" alt="Intérieur de la boutique" />
                 </div>
                 <div className="col-md-4">
-                    <img src="path_to_image3.jpg" className="img-fluid rounded mb-4" alt="Produits de savon" />
+                    <img src="./assets/boutique-colors.webp" className="img-fluid rounded mb-4" alt="Produits de savon" />
                 </div>
             </div>
             <div className="row">
                 <div className="col-md-4">
-                    <img src="path_to_image4.jpg" className="img-fluid rounded mb-4" alt="Atelier de fabrication" />
+                    <img src="./assets/atelier-savon.webp" className="img-fluid rounded mb-4" alt="Atelier de fabrication" />
                 </div>
                 <div className="col-md-4">
-                    <img src="path_to_image5.jpg" className="img-fluid rounded mb-4" alt="Savons en exposition" />
+                    <img src="./assets/boutique-reine.webp" className="img-fluid rounded mb-4" alt="Savons en exposition" />
                 </div>
                 <div className="col-md-4">
-                    <img src="path_to_image6.jpg" className="img-fluid rounded mb-4" alt="Château de style Versailles" />
+                    <img src="./assets/boutique-logo.png" className="img-fluid rounded mb-4" alt="Château de style Versailles" />
                 </div>
             </div>
         </div>

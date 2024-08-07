@@ -3,11 +3,13 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Products from './components/Products';
 import Product from './components/Product';
-import About from './components/About'; 
+import About from './components/About';
+import Contact from './components/Contact'; 
 import Cart from './components/Cart';
 import Register from './components/Register';
 import { Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
+import Checkout from './components/Checkout';
 import Footer from './components/Footer';
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />
     </>
