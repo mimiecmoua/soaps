@@ -7,7 +7,7 @@ const Footer = () => {
                 <p className="col-md-4 mb-0 text-body-secondary">© 2024 webOara, Inc</p>
 
                 <a href="/" className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <img src="../assets/logo1.png" alt="logo" height="60px" width="60px" />
+                    <img src="./assets/logo1.png" alt="logo" height="60px" width="60px" />
                 </a>
 
                 <ul className="nav col-md-4 justify-content-end">
