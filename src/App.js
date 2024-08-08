@@ -18,8 +18,7 @@ function App() {
       <Navbar />
       <div className="flex-grow-1">
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
@@ -28,7 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/checkout" element={<Checkout />} />
-          <Route path="*" element={<Navigate to="/home" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
       <Footer />
@@ -37,6 +36,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
