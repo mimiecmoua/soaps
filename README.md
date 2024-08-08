@@ -84,7 +84,7 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce proje
 
 ## Auteur
 
-Ce projet a été réalisé par [Votre Nom]. Pour toute question ou problème, n'hésitez pas à ouvrir une issue dans le dépôt GitHub.
+Ce projet a été réalisé par [webOara]. Pour toute question ou problème, n'hésitez pas à ouvrir une issue dans le dépôt GitHub.
 
 ---
 
