@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Collection Savons
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](./public/assets/boutique-logo.png)
 
-## Available Scripts
+Bienvenue sur le projet **Collection Savons** ! Il s'agit d'un site web de démo construit avec React, présentant une collection de savons inspirée par l'histoire de France.
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Ce projet est une application web conçue pour présenter et vendre des savons de luxe. Le site utilise React pour la gestion de l'interface utilisateur, Redux pour la gestion de l'état global de l'application, et React Router pour la navigation. Les fonctionnalités incluent une galerie de produits, un panier d'achat, une page de contact, et des pages d'inscription et de connexion factices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Fonctionnalités
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Accueil** : Présentation de la nouvelle collection de savons.
+- **Produits** : Liste et filtre des produits disponibles.
+- **Détails du produit** : Informations détaillées sur chaque produit.
+- **Panier** : Gestion du panier d'achat avec ajout, suppression et mise à jour des quantités.
+- **Inscription et Connexion** : Formulaires factices pour la gestion des utilisateurs.
+- **À propos** : Informations sur la boutique et son savoir-faire.
+- **Contact** : Formulaire de contact pour les utilisateurs.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clonez le dépôt :
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/votre-utilisateur/soaps.git
+   cd soaps
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Installez les dépendances :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Créez un fichier `.env` à la racine du projet et ajoutez la ligne suivante pour définir l'URL publique :
+   ```plaintext
+   PUBLIC_URL=https://votre-utilisateur.github.io/soaps
+   ```
 
-### `npm run eject`
+## Scripts Disponibles
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Dans le répertoire du projet, vous pouvez exécuter les scripts suivants :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start` : Lance l'application en mode développement.
+- `npm run build` : Compile l'application pour la production dans le dossier `build`.
+- `npm run deploy` : Déploie l'application sur GitHub Pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Déploiement sur GitHub Pages
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Créez un fichier `gh-pages` dans votre dépôt :
 
-## Learn More
+   ```bash
+   npm install --save gh-pages
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Ajoutez les lignes suivantes dans votre fichier `package.json` :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```json
+   "homepage": "https://votre-utilisateur.github.io/soaps",
+   "scripts": {
+       "predeploy": "npm run build",
+       "deploy": "gh-pages -d build"
+   }
+   ```
 
-### Code Splitting
+3. Déployez l'application :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm run deploy
+   ```
 
-### Analyzing the Bundle Size
+4. Dans les paramètres de votre dépôt GitHub, allez dans la section "Pages" et configurez la source pour utiliser la branche `gh-pages` et le dossier `/root`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribution
 
-### Making a Progressive Web App
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Forkez le projet.
+2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/ma-fonctionnalite`).
+3. Commitez vos changements (`git commit -am 'Ajoute une nouvelle fonctionnalité'`).
+4. Pushez votre branche (`git push origin feature/ma-fonctionnalite`).
+5. Ouvrez une Pull Request.
 
-### Advanced Configuration
+## Auteur
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Ce projet a été réalisé par [Votre Nom]. Pour toute question ou problème, n'hésitez pas à ouvrir une issue dans le dépôt GitHub.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Merci à tous ceux qui ont contribué à ce projet et aux développeurs des outils utilisés dans cette application.
